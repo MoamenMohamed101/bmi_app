@@ -3,11 +3,13 @@ import 'dart:math';
 import 'package:bmi_app/bmi_result%20screen.dart';
 import 'package:flutter/material.dart';
 
+import 'login_screen.dart';
+
 main() {
   runApp(
-    const MaterialApp(
+    MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: BmiScreen(),
+      home: LoginScreen(),
     ),
   );
 }
