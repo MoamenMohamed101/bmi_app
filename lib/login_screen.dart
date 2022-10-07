@@ -1,9 +1,11 @@
+import 'package:bmi_app/shared/components/components.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatelessWidget {
   LoginScreen({Key? key}) : super(key: key);
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -60,23 +62,14 @@ class LoginScreen extends StatelessWidget {
                 const SizedBox(
                   height: 15,
                 ),
-                Container(
-                  width: double.infinity,
-                  decoration: BoxDecoration(
+                dufultButton(
                     color: Colors.blue,
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                  child: MaterialButton(
-                    onPressed: () {
+                    text: 'login',
+                    voidCallback: () {
                       print(emailController.text);
                       print(passwordController.text);
                     },
-                    child: const Text(
-                      'Login',
-                      style: TextStyle(color: Colors.white, fontSize: 20),
-                    ),
-                  ),
-                ),
+                    width: double.infinity)
               ],
             ),
           ),
