@@ -56,4 +56,3 @@ defaultFormField(
       onFieldSubmitted: onFieldSubmitted,
       onChanged: onChanged,
     );
-//
