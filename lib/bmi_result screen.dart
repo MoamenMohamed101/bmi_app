@@ -25,7 +25,7 @@ class BmiResultScreen extends StatelessWidget {
               style: const TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
             ),
             Text(
-              'Result : ${result}',
+              'Result : $result',
               style: const TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
             ),
             Text(
