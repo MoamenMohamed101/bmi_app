@@ -7,9 +7,9 @@ import 'login_screen.dart';
 
 main() {
   runApp(
-    MaterialApp(
+    const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LoginScreen(),
+      home: BmiScreen(),
     ),
   );
 }
@@ -181,7 +181,7 @@ class _BmiScreenState extends State<BmiScreen> {
                           ),
                           Text(
                             '$age',
-                            style: TextStyle(
+                            style: const TextStyle(
                                 fontSize: 35, fontWeight: FontWeight.w900),
                           ),
                           Row(
@@ -233,7 +233,7 @@ class _BmiScreenState extends State<BmiScreen> {
                           ),
                           Text(
                             '$weight',
-                            style: TextStyle(
+                            style: const TextStyle(
                                 fontSize: 35, fontWeight: FontWeight.w900),
                           ),
                           Row(
@@ -296,4 +296,4 @@ class _BmiScreenState extends State<BmiScreen> {
     );
   }
 }
-//
+// debug
